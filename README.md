@@ -7,7 +7,7 @@ It features a sleek **black & yellow theme**, optimized network usage, and smoot
 ---
 
 ## 🎥 Demo Video
-👉 [Watch the Demo](#)  
+👉 [Watch the Working Demo](https://drive.google.com/file/d/13E8M-6653vOuGDyxdMNDC5wNkbazMMOj/view?usp=drivesdk)  
 _(Replace `#` with your actual demo video link once uploaded to YouTube or Google Drive)_
 
 ---
@@ -65,8 +65,11 @@ This app uses [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock m
 
 - **Intraday Endpoint** → Renders **candlestick chart** for short-term (real-time) movements.  
 - **Daily Endpoint** → Renders **line chart** for long-term analysis.  
+- **Company Overview Endpoint** → Fetches complete details of a company (sector, industry, market cap, P/E ratio, etc.) based on the symbol from ticker search. This powers the **search functionality** in the app.  
+- **Ticker Search Endpoint** → Allows searching for companies by keywords (e.g., company name or ticker symbol) and returns possible matches.  
+- **Top Gainers & Losers Endpoint** → Retrieves the **top gainers, top losers, and most actively traded stocks**, allowing users to quickly see market movers.  
 
-📊 Custom logic was written to transform API responses into datasets that MPAndroidChart can render efficiently for different time intervals (`1D`, `1W`, `15D`, `30D`, `3M`).
+📊 Custom logic is implemented to transform Alpha Vantage responses into chart datasets and structured UI states for seamless rendering across different time intervals (`1D`, `1W`, `15D`, `30D`, `3M`).  
 
 ---
 
@@ -95,14 +98,22 @@ This app uses [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock m
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/stock-market-tracker.git
+   
+2. Get a free API key from Alpha Vantage by visiting their official website and generating your personal key.  
+3. Add your API key inside the constants folder in the file named ApiConstants.kt.  
+4. Open the project in Android Studio Arctic Fox or newer. Make sure you have the latest Android Gradle Plugin installed and sync the project with Gradle files.  
+5. Build and run the app on either an emulator or a physical Android device.  
+   
 
-🏆 Brownie Points
+## 🏆 Brownie Points
 
-🌌 Modern black + yellow theme.
+- 🌌 **Modern UI Theme** → Sleek black background with yellow highlights.  
+- 📊 **Candlestick & Line Charts** → Accurate representation of stock market data.  
+- 🕒 **Time Interval Filters** → Supports `1D`, `1W`, `15D`, `30D`, `3M`.  
+- ⚡ **Optimized Network Calls** → ViewModel segregation prevents redundant API requests.  
+- ✅ **Error Handling** → Clean `Resource<T>` wrapper for Success, Error, and Loading states.  
+- 📉 **Reduced Bandwidth Usage** → Smart caching and minimized unnecessary requests.  
+- 🔧 **Clean Architecture** → MVVM with clear separation of concerns.  
+- 🎨 **User Experience** → Smooth navigation with a professional black & yellow design.  
 
-📊 Beautiful candlestick & line chart implementation.
-
-🕒 Custom logic for time intervals (1D, 1W, 15D, 30D, 3M).
-
-📉 Bandwidth-optimized API usage via ViewModel segregation.
    
