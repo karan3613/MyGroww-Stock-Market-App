@@ -95,3 +95,14 @@ This app uses [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock m
 1. Clone the repository:
    ```bash
    git clone https://github.com/yourusername/stock-market-tracker.git
+
+🏆 Brownie Points
+
+🌌 Modern black + yellow theme.
+
+📊 Beautiful candlestick & line chart implementation.
+
+🕒 Custom logic for time intervals (1D, 1W, 15D, 30D, 3M).
+
+📉 Bandwidth-optimized API usage via ViewModel segregation.
+   
