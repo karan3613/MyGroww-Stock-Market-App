@@ -8,7 +8,6 @@ It features a sleek **black & yellow theme**, optimized network usage, and smoot
 
 ## 🎥 Demo Video
 👉 [Watch the Working Demo](https://drive.google.com/file/d/13E8M-6653vOuGDyxdMNDC5wNkbazMMOj/view?usp=drivesdk)  
-_(Replace `#` with your actual demo video link once uploaded to YouTube or Google Drive)_
 
 ---
 
