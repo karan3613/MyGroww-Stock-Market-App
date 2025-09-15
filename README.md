@@ -96,7 +96,7 @@ This app uses [Alpha Vantage API](https://www.alphavantage.co/) to fetch stock m
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/stock-market-tracker.git
+   git clone https://github.com/karan3613/stock-market-tracker.git
    
 2. Get a free API key from Alpha Vantage by visiting their official website and generating your personal key.  
 3. Add your API key inside the constants folder in the file named ApiConstants.kt.  
